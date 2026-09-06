@@ -27,7 +27,7 @@ from chains.teaching_suggestion import (
     build_teaching_suggestion_chain,
     parse_teaching_suggestion_output,
 )
-from chains.base import get_llm
+from chains.base import get_llm, llm_config_snapshot
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from utils.logger import logger
