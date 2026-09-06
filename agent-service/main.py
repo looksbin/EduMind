@@ -18,14 +18,14 @@ from services.spring_client import spring_client
 from chains.learning_plan import build_learning_plan_chain, parse_plan_output
 from chains.heartbeat import build_reminder_chain, parse_reminder_output
 from chains.memory import build_memory_update_chain, parse_memory_output
-from prompts.teaching_suggestion import (
-    TEACHING_SUGGESTION_SYSTEM_PROMPT,
-    TEACHING_SUGGESTION_USER_TEMPLATE,
-)
 from chains.teaching_suggestion import (
     build_fallback_teaching_suggestion,
     build_teaching_suggestion_chain,
     parse_teaching_suggestion_output,
+)
+from prompts.teaching_suggestion import (
+    TEACHING_SUGGESTION_SYSTEM_PROMPT,
+    TEACHING_SUGGESTION_USER_TEMPLATE,
 )
 from chains.base import get_llm, llm_config_snapshot
 from langchain_core.prompts import ChatPromptTemplate
